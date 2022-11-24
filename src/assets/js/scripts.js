@@ -8,7 +8,9 @@ async function getLatestCryptocurrencyListings(url) {
         credentials: 'omit', // include, *same-origin, omit
         headers: {
           'Content-Type': 'application/json',
-          'X-CMC_PRO_API_KEY':'42aca7ab-c1ba-4b97-8ede-d6a04d97da26'
+          'X-CMC_PRO_API_KEY':'42aca7ab-c1ba-4b97-8ede-d6a04d97da26',
+          'Access-Control-Request-Method': 'GET',
+          'Access-Control-Allow-Headers': 'Content-Type, X-CMC_PRO_API_KEY'
         },
         redirect: 'follow', // manual, *follow, error
         referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
